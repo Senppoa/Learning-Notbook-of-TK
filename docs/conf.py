@@ -14,7 +14,19 @@ release = 'v1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.doctest',
+    'sphinx_autodoc_typehints',
+    'jupyter_sphinx',
+    'nbsphinx',
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
